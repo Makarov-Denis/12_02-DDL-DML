@@ -43,7 +43,7 @@ sudo systemctl status mysql.service
 ```sh
 mysql -u root -p 
 create user 'sys_temp'@'%' identified by 'Root_12root';
-exit
+exit 
 ```
 
 
