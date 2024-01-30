@@ -52,6 +52,8 @@ mysql -u root -p
 select User,Host from mysql.user;
 exit
 ```
+![Снимок79](https://github.com/Makarov-Denis/12_02-DDL-DML/assets/148921246/2e0dfb7c-e665-471a-9f19-27dfe2a43719)
+
 
 ### Задание 2
 
