@@ -73,6 +73,12 @@ exit
 
 ![Снимок80](https://github.com/Makarov-Denis/12_02-DDL-DML/assets/148921246/549d87bc-6895-48d3-8220-4276aca37b17)
 
+1.6. Переподключитесь к базе данных от имени sys_temp.
+Для смены типа аутентификации с sha2 используйте запрос:
+
+```sql
+ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+```
 
 ### Задание 2
 
