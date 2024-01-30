@@ -46,8 +46,12 @@ create user 'sys_temp'@'%' identified by 'Root_12root';
 exit 
 ```
 1.3. Выполните запрос на получение списка пользователей в базе данных. (скриншот)
-```
 
+```sql
+mysql -u root -p 
+select User,Host from mysql.user;
+exit
+```
 
 ### Задание 2
 
