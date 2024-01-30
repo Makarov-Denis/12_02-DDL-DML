@@ -40,7 +40,7 @@ sudo systemctl status mysql.service
 
 1.2. Создайте учётную запись sys_temp.
 
-```
+```sql
 mysql -u root -p 
 create user 'sys_temp'@'%' identified by 'Root_12root';
 exit 
