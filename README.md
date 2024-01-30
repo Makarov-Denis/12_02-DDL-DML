@@ -38,9 +38,14 @@ sudo apt install -y mysql-server # задаём пароль 12345 для пол
 sudo systemctl status mysql.service
 ```
 
+1.2. Создайте учётную запись sys_temp.
 
+```sh
+mysql -u root -p 
+create user 'sys_temp'@'%' identified by 'Root_12root';
+exit
+```
 
----
 
 ### Задание 2
 
