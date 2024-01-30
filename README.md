@@ -54,6 +54,25 @@ exit
 ```
 ![Снимок79](https://github.com/Makarov-Denis/12_02-DDL-DML/assets/148921246/2e0dfb7c-e665-471a-9f19-27dfe2a43719)
 
+1.4. Дайте все права для пользователя sys_temp.
+
+```sql
+mysql -u root -p 
+grant ALL PRIVILEGES on *.* to 'sys_temp'@'%' with GRANT option;
+flush privileges;
+exit
+```
+
+1.5. Выполните запрос на получение списка прав для пользователя sys_temp. (скриншот)
+
+```sql
+mysql -u root -p 
+show grants for 'sys_temp'@'%';
+exit
+```
+
+![Снимок80](https://github.com/Makarov-Denis/12_02-DDL-DML/assets/148921246/549d87bc-6895-48d3-8220-4276aca37b17)
+
 
 ### Задание 2
 
