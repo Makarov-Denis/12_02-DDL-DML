@@ -86,6 +86,44 @@ mysql -u sys_temp -p
 alter user 'sys_temp'@'%' IDENTIFIED with mysql_native_password by 'Root_12root';
 exit
 ```
+
+1.6. По ссылке https://downloads.mysql.com/docs/sakila-db.zip скачайте дамп базы данных.
+
+```sh
+wget -c https://downloads.mysql.com/docs/sakila-db.zip
+unzip sakila-db.zip
+cd sakila-db
+```
+
+1.7. Восстановите дамп в базу данных.
+
+```sql
+mysql -u sys_temp -p
+show databases;
+create database SakilaDB;
+show databases;
+use SakilaDB;
+show tables;
+source sakila-schema.sql;
+source sakila-data.sql;
+show tables;
+exit
+```
+
+1.8. При работе в IDE сформируйте ER-диаграмму получившейся базы данных. При работе в командной строке используйте команду для получения всех таблиц базы данных. (скриншот)
+
+```sql
+mysql -u sys_temp -p
+show databases;
+use SakilaDB;
+show tables;
+exit
+```
+
+![Снимок81](https://github.com/Makarov-Denis/12_02-DDL-DML/assets/148921246/933a39b7-7888-46a3-bee8-3fb51236a92c)
+
+---
+
 ### Задание 2
 
 `Приведите ответ в свободной форме........`
