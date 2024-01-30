@@ -79,7 +79,13 @@ exit
 ```sql
 ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
 ```
+### Запрос представлен ниже:
 
+```sql
+mysql -u sys_temp -p 
+alter user 'sys_temp'@'%' IDENTIFIED with mysql_native_password by 'Root_12root';
+exit
+```
 ### Задание 2
 
 `Приведите ответ в свободной форме........`
