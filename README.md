@@ -28,7 +28,7 @@
 1.1. Поднимите чистый инстанс MySQL версии 8.0+. Можно использовать локальный сервер или контейнер Docker.
 
 
-....
+```sh
 sudo apt update
 sudo apt install gnupg
 wget -c https://dev.mysql.com/get/mysql-apt-config_0.8.24-1_all.deb
@@ -36,7 +36,7 @@ sudo dpkg -i mysql-apt-config_0.8.24-1_all.deb
 sudo apt update
 sudo apt install -y mysql-server # задаём пароль 12345 для пользователя root в СУБД MySQL
 sudo systemctl status mysql.service
-....
+```
 
 
 
